@@ -1,0 +1,13 @@
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\bin\Debug\netstandard2.0\OnlineGame.deps.json
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\bin\Debug\netstandard2.0\OnlineGame.dll
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\bin\Debug\netstandard2.0\OnlineGame.pdb
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\obj\Debug\netstandard2.0\OnlineGame.csprojResolveAssemblyReference.cache
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\obj\Debug\netstandard2.0\OnlineGame.csproj.CoreCompileInputs.cache
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\obj\Debug\netstandard2.0\OnlineGame.App.xaml.g.cs
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\obj\Debug\netstandard2.0\OnlineGame.AssemblyInfoInputs.cache
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\obj\Debug\netstandard2.0\OnlineGame.AssemblyInfo.cs
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\obj\Debug\netstandard2.0\OnlineGame.dll
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\obj\Debug\netstandard2.0\OnlineGame.pdb
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\obj\Debug\netstandard2.0\OnlineGame.Pages.Register.xaml.g.cs
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\bin\Debug\netstandard2.0\ToolBox.dll
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\obj\Debug\netstandard2.0\OnlineGame.Pages.MainPage.xaml.g.cs

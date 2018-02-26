@@ -11,7 +11,8 @@
 namespace OnlineGame {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\forma204\\source\\repos\\OnlineGame\\OnlineGame\\OnlineGame\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\App.xam" +
+        "l")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OnlineGame.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace OnlineGame
 		{
 			InitializeComponent();
 
-			MainPage = new OnlineGame.MainPage();
+            MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

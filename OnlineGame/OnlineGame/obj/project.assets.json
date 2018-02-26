@@ -391,11 +391,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\forma204\\source\\repos\\OnlineGame\\OnlineGame\\OnlineGame\\OnlineGame.csproj",
+      "projectUniqueName": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj",
       "projectName": "OnlineGame",
-      "projectPath": "C:\\Users\\forma204\\source\\repos\\OnlineGame\\OnlineGame\\OnlineGame\\OnlineGame.csproj",
+      "projectPath": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj",
       "packagesPath": "C:\\Users\\forma204\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\forma204\\source\\repos\\OnlineGame\\OnlineGame\\OnlineGame\\obj\\",
+      "outputPath": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

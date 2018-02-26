@@ -713,11 +713,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\forma204\\source\\repos\\OnlineGame\\OnlineGame\\OnlineGame.Android\\OnlineGame.Android.csproj",
+      "projectUniqueName": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame.Android\\OnlineGame.Android.csproj",
       "projectName": "OnlineGame.Android",
-      "projectPath": "C:\\Users\\forma204\\source\\repos\\OnlineGame\\OnlineGame\\OnlineGame.Android\\OnlineGame.Android.csproj",
+      "projectPath": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame.Android\\OnlineGame.Android.csproj",
       "packagesPath": "C:\\Users\\forma204\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\forma204\\source\\repos\\OnlineGame\\OnlineGame\\OnlineGame.Android\\obj\\",
+      "outputPath": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -738,8 +738,8 @@
       "frameworks": {
         "monoandroid71": {
           "projectReferences": {
-            "C:\\Users\\forma204\\source\\repos\\OnlineGame\\OnlineGame\\OnlineGame\\OnlineGame.csproj": {
-              "projectPath": "C:\\Users\\forma204\\source\\repos\\OnlineGame\\OnlineGame\\OnlineGame\\OnlineGame.csproj"
+            "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj": {
+              "projectPath": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj"
             }
           }
         }

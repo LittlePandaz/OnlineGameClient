@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OnlineGame.Pages.Register">
+    <ContentPage.Content>
+        <StackLayout Padding="16" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="200">
+            <Entry Placeholder="Nickname"/>
+            <Entry Placeholder="Email" Keyboard="Email"/>
+            <Entry Placeholder="Password" IsPassword="True"/>
+            <Entry Placeholder="Confirm password" IsPassword="True"/>
+            <Button Text="Register" Clicked="SignUp"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
