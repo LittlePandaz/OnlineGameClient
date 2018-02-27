@@ -11,7 +11,7 @@ namespace OnlineGame.ViewModel
     public class MainViewModel : BaseViewModel
     {
         public ICommand LoginCommand { get; set; }
-        public ICommand RegisterCommand { get; set; }
+        public ICommand SignUpCommand { get; set; }
 
         private string _NicknameOrEmail;
 
@@ -42,7 +42,7 @@ namespace OnlineGame.ViewModel
         public MainViewModel(Interfaces.INavigation navigation) : base(navigation)
         {
             LoginCommand = new Command(x => { }, y => { return !string.IsNullOrEmpty(NicknameOrEmail) && !string.IsNullOrEmpty(Password); });
-            RegisterCommand = new Command(SignUp);
+            SignUpCommand = new Command(SignUp);
         }
 
         private async void SignUp()

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OnlineGame.Service;
+using OnlineGame.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,12 +16,8 @@ namespace OnlineGame.Pages
 	{
 		public Register ()
 		{
+            BindingContext = new RegisterViewModel(new Navigation());
 			InitializeComponent ();
 		}
-
-        public void SignUp(Object sender, EventArgs e)
-        {
-            
-        }
     }
 }

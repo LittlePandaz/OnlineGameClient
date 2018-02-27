@@ -4,11 +4,11 @@
              x:Class="OnlineGame.Pages.Register">
     <ContentPage.Content>
         <StackLayout Padding="16" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="200">
-            <Entry Placeholder="Nickname"/>
-            <Entry Placeholder="Email" Keyboard="Email"/>
-            <Entry Placeholder="Password" IsPassword="True"/>
-            <Entry Placeholder="Confirm password" IsPassword="True"/>
-            <Button Text="Register" Clicked="SignUp"/>
+            <Entry Placeholder="Nickname" Text="{Binding Nickname}"/>
+            <Entry Placeholder="Email" Keyboard="Email" Text="{Binding Email}"/>
+            <Entry Placeholder="Password" IsPassword="True" Text="{Binding Password}"/>
+            <Entry Placeholder="Confirm password" IsPassword="True" Text="{Binding ConfirmPassword}"/>
+            <Button Text="Register" Command="{Binding RegisterCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
