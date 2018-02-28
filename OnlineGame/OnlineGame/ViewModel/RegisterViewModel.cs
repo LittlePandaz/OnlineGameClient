@@ -6,6 +6,7 @@ using System.Windows.Input;
 using OnlineGame.Interfaces;
 using OnlineGame.Models;
 using Xamarin.Forms;
+using Newtonsoft.Json;
 
 namespace OnlineGame.ViewModel
 {
@@ -81,12 +82,31 @@ namespace OnlineGame.ViewModel
             RegisterCommand = new Command(x => { Register(); }, y => { return (!string.IsNullOrEmpty(Nickname) && !string.IsNullOrEmpty(Email) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(ConfirmPassword)) && (Password.Equals(ConfirmPassword)); });
         }
 
-        private void Register()
+        private async void Register()
         {
             using (HttpClient client = new HttpClient())
             {
+                Player p = new Player() { Nickname = Nickname, Email = Email.ToLower(), Password = Password };
                 Uri uri = new Uri("http://localhost:53485/api/playerapi/");
+                string json = JsonConvert.SerializeObject(p);
 
+                try
+                {
+                    HttpResponseMessage message = await client.PostAsync(uri, new StringContent(json, Encoding.UTF8, "application/json"));
+                    if(message.IsSuccessStatusCode)
+                    {
+                        p.Id = int.Parse(await message.Content.ReadAsStringAsync());
+                        await _Navigation.PopModal();
+                    }
+                }
+                catch(HttpRequestException e)
+                {
+                    await _Navigation.DisplayAlert("Error", e.Message, "Ok", "Cancel");
+                }
+                catch(ArgumentNullException e)
+                {
+                    await _Navigation.DisplayAlert("Error", e.Message, "Ok", "Cancel");
+                }
             }
         }
     }

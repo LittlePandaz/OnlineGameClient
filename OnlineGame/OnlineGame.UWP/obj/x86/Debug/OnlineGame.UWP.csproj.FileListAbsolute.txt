@@ -292,3 +292,4 @@ C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\ob
 C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\bin\x86\Debug\Newtonsoft.Json.dll

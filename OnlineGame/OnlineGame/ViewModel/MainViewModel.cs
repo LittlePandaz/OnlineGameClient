@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
 using System.Windows.Input;
+using Newtonsoft.Json;
 using OnlineGame.Interfaces;
+using OnlineGame.Models;
 using OnlineGame.Pages;
 using Xamarin.Forms;
 
@@ -41,13 +44,40 @@ namespace OnlineGame.ViewModel
 
         public MainViewModel(Interfaces.INavigation navigation) : base(navigation)
         {
-            LoginCommand = new Command(x => { }, y => { return !string.IsNullOrEmpty(NicknameOrEmail) && !string.IsNullOrEmpty(Password); });
+            LoginCommand = new Command(x => { Login(); }, y => { return !string.IsNullOrEmpty(NicknameOrEmail) && !string.IsNullOrEmpty(Password); });
             SignUpCommand = new Command(SignUp);
+        }
+
+        private async void Login()
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                Uri uri = new Uri($"http://localhost:53485/api/playerapi?nicknameoremail={NicknameOrEmail}&password={Password}");
+
+                try
+                {
+                    HttpResponseMessage message = await client.GetAsync(uri, HttpCompletionOption.ResponseContentRead);
+                    if(message.IsSuccessStatusCode)
+                    {
+                        string json = await message.Content.ReadAsStringAsync();
+                        Player p = JsonConvert.DeserializeObject<Player>(json);
+                        await _Navigation.Push(new GamePage());
+                    }
+                }
+                catch(HttpRequestException e)
+                {
+                    await _Navigation.DisplayAlert("Error", e.Message, "Ok", "Cancel");
+                }
+                catch(ArgumentNullException e)
+                {
+                    await _Navigation.DisplayAlert("Error", e.Message, "Ok", "Cancel");
+                }
+            }
         }
 
         private async void SignUp()
         {
-            await _Navigation.Push(new Register());
+            await _Navigation.PushModal(new Register());
         }
     }
 }

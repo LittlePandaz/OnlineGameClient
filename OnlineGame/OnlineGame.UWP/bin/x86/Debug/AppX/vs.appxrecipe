@@ -31,13 +31,17 @@
     <AppXManifest Include="C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-26T13:12:59.764</Modified>
+      <Modified>2018-02-28T09:46:09.585</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\bin\x86\Debug\OnlineGame.UWP.exe">
       <PackagePath>entrypoint\OnlineGame.UWP.exe</PackagePath>
-      <Modified>2018-02-26T13:12:58.561</Modified>
+      <Modified>2018-02-28T09:46:08.592</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\forma204\.nuget\packages\newtonsoft.json\11.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2018-02-18T08:44:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\forma204\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.1\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -713,7 +717,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame\bin\Debug\netstandard2.0\OnlineGame.dll">
       <PackagePath>OnlineGame.dll</PackagePath>
-      <Modified>2018-02-26T13:12:54.117</Modified>
+      <Modified>2018-02-28T09:46:04.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -884,11 +888,11 @@
     <AppxPackagedFile Include="C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-26T13:12:59.158</Modified>
+      <Modified>2018-02-28T09:46:09.208</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\bin\x86\Debug\Core\OnlineGame.UWP.exe">
       <PackagePath>OnlineGame.UWP.exe</PackagePath>
-      <Modified>2018-02-26T13:12:59.760</Modified>
+      <Modified>2018-02-28T09:46:09.580</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

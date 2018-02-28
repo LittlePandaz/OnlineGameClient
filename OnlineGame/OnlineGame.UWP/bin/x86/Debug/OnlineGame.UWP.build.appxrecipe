@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\bin\x86\Debug\OnlineGame.UWP.exe">
       <PackagePath>entrypoint\OnlineGame.UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\forma204\.nuget\packages\newtonsoft.json\11.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\forma204\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.1\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
