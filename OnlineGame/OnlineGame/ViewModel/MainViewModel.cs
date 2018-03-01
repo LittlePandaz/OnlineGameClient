@@ -61,7 +61,16 @@ namespace OnlineGame.ViewModel
                     {
                         string json = await message.Content.ReadAsStringAsync();
                         Player p = JsonConvert.DeserializeObject<Player>(json);
-                        await _Navigation.Push(new GamePage());
+                        if (p != null)
+                        {
+                            
+                            await _Navigation.Push(new GamePage());
+                        }
+                        else
+                        {
+                            await _Navigation.DisplayAlert("Error", "Wrong Credentials", "OK", "CANCEL");
+                        }
+                       
                     }
                 }
                 catch(HttpRequestException e)
@@ -77,7 +86,7 @@ namespace OnlineGame.ViewModel
 
         private async void SignUp()
         {
-            await _Navigation.PushModal(new Register());
+             await _Navigation.PushModal(new Register());
         }
     }
 }

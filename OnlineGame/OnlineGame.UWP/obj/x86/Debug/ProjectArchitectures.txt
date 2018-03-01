@@ -1,1 +1,1 @@
-C:\Users\forma204\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\OnlineGame.UWP.csproj;x86
+C:\Users\Gregory\Documents\GitHub\OnlineGameClient\OnlineGame\OnlineGame.UWP\OnlineGame.UWP.csproj;x86

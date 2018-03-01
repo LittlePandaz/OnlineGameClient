@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Microsoft.AspNet.SignalR.Client/2.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -55,6 +67,27 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNet.SignalR.Client/2.2.2": {
+      "sha512": "rydxizwCvo53EzwhqzUBoGbd1zcaECNTduer2e1Q6df832v/CG+HKOJ5ne3eC809WQmZ/xwbNZixaSY2M6FwxA==",
+      "type": "package",
+      "path": "microsoft.aspnet.signalr.client/2.2.2",
+      "files": [
+        "lib/net40/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/net40/Microsoft.AspNet.SignalR.Client.dll",
+        "lib/net45/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/net45/Microsoft.AspNet.SignalR.Client.dll",
+        "lib/netcore50/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/netcore50/Microsoft.AspNet.SignalR.Client.dll",
+        "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll",
+        "lib/portable-net45+sl50+win+wpa81+wp80/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/portable-net45+sl50+win+wpa81+wp80/Microsoft.AspNet.SignalR.Client.dll",
+        "lib/portable-win81+wpa81/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/portable-win81+wpa81/Microsoft.AspNet.SignalR.Client.dll",
+        "microsoft.aspnet.signalr.client.2.2.2.nupkg.sha512",
+        "microsoft.aspnet.signalr.client.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -413,13 +446,14 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Microsoft.AspNet.SignalR.Client >= 2.2.2",
       "NETStandard.Library >= 2.0.1",
       "Newtonsoft.Json >= 11.0.1",
       "Xamarin.Forms >= 2.5.0.122203"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\forma204\\.nuget\\packages\\": {},
+    "C:\\Users\\Gregory\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -429,18 +463,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj",
+      "projectUniqueName": "C:\\Users\\Gregory\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj",
       "projectName": "OnlineGame",
-      "projectPath": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj",
-      "packagesPath": "C:\\Users\\forma204\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\obj\\",
+      "projectPath": "C:\\Users\\Gregory\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj",
+      "packagesPath": "C:\\Users\\Gregory\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gregory\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\forma204\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gregory\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -449,7 +483,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netstandard2.0": {
@@ -465,6 +499,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "Microsoft.AspNet.SignalR.Client": {
+            "target": "Package",
+            "version": "[2.2.2, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",

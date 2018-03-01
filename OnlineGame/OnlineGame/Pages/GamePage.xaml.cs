@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OnlineGame.Service;
+using OnlineGame.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +16,8 @@ namespace OnlineGame.Pages
 	{
 		public GamePage ()
 		{
-			InitializeComponent ();
-		}
+            BindingContext = new GameViewModel(new Navigation());
+            InitializeComponent ();
+        }
 	}
 }

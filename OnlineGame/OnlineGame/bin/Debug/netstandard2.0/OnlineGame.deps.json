@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "d15aa9c71ac4c765113c47f549a02e8e5e559f7d"
+    "signature": "db99536f19a604b0508954aced202ae1e9ff2bbf"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,12 +9,21 @@
     ".NETStandard,Version=v2.0/": {
       "OnlineGame/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.SignalR.Client": "2.2.2",
           "NETStandard.Library": "2.0.1",
           "Newtonsoft.Json": "11.0.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
         "runtime": {
           "OnlineGame.dll": {}
+        }
+      },
+      "Microsoft.AspNet.SignalR.Client/2.2.2": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -42,6 +51,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNet.SignalR.Client/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rydxizwCvo53EzwhqzUBoGbd1zcaECNTduer2e1Q6df832v/CG+HKOJ5ne3eC809WQmZ/xwbNZixaSY2M6FwxA==",
+      "path": "microsoft.aspnet.signalr.client/2.2.2",
+      "hashPath": "microsoft.aspnet.signalr.client.2.2.2.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

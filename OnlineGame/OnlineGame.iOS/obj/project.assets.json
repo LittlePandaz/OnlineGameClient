@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Microsoft.AspNet.SignalR.Client/2.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.1": {
         "type": "package",
         "compile": {
@@ -138,6 +150,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AspNet.SignalR.Client": "2.2.2",
           "Newtonsoft.Json": "11.0.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
@@ -150,6 +163,18 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Microsoft.AspNet.SignalR.Client/2.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.1": {
         "type": "package",
         "compile": {
@@ -286,6 +311,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AspNet.SignalR.Client": "2.2.2",
           "Newtonsoft.Json": "11.0.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
@@ -298,6 +324,18 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Microsoft.AspNet.SignalR.Client/2.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.1": {
         "type": "package",
         "compile": {
@@ -434,6 +472,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AspNet.SignalR.Client": "2.2.2",
           "Newtonsoft.Json": "11.0.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
@@ -446,6 +485,18 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Microsoft.AspNet.SignalR.Client/2.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll": {}
+        }
+      },
       "Newtonsoft.Json/11.0.1": {
         "type": "package",
         "compile": {
@@ -582,6 +633,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AspNet.SignalR.Client": "2.2.2",
           "Newtonsoft.Json": "11.0.1",
           "Xamarin.Forms": "2.5.0.122203"
         },
@@ -595,6 +647,27 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNet.SignalR.Client/2.2.2": {
+      "sha512": "rydxizwCvo53EzwhqzUBoGbd1zcaECNTduer2e1Q6df832v/CG+HKOJ5ne3eC809WQmZ/xwbNZixaSY2M6FwxA==",
+      "type": "package",
+      "path": "microsoft.aspnet.signalr.client/2.2.2",
+      "files": [
+        "lib/net40/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/net40/Microsoft.AspNet.SignalR.Client.dll",
+        "lib/net45/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/net45/Microsoft.AspNet.SignalR.Client.dll",
+        "lib/netcore50/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/netcore50/Microsoft.AspNet.SignalR.Client.dll",
+        "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/netstandard1.3/Microsoft.AspNet.SignalR.Client.dll",
+        "lib/portable-net45+sl50+win+wpa81+wp80/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/portable-net45+sl50+win+wpa81+wp80/Microsoft.AspNet.SignalR.Client.dll",
+        "lib/portable-win81+wpa81/Microsoft.AspNet.SignalR.Client.XML",
+        "lib/portable-win81+wpa81/Microsoft.AspNet.SignalR.Client.dll",
+        "microsoft.aspnet.signalr.client.2.2.2.nupkg.sha512",
+        "microsoft.aspnet.signalr.client.nuspec"
+      ]
+    },
     "Newtonsoft.Json/11.0.1": {
       "sha512": "pNN4l+J6LlpIvHOeNdXlwxv39NPJ2B5klz+Rd2UQZIx30Squ5oND1Yy3wEAUoKn0GPUj6Yxt9lxlYWQqfZcvKg==",
       "type": "package",
@@ -817,29 +890,30 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "Microsoft.AspNet.SignalR.Client >= 2.2.2",
       "OnlineGame >= 1.0.0",
       "Xamarin.Forms >= 2.5.0.122203"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\forma204\\.nuget\\packages\\": {},
+    "C:\\Users\\Gregory\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame.iOS\\OnlineGame.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Gregory\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame.iOS\\OnlineGame.iOS.csproj",
       "projectName": "OnlineGame.iOS",
-      "projectPath": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame.iOS\\OnlineGame.iOS.csproj",
-      "packagesPath": "C:\\Users\\forma204\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Gregory\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame.iOS\\OnlineGame.iOS.csproj",
+      "packagesPath": "C:\\Users\\Gregory\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gregory\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\forma204\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gregory\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -848,13 +922,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj": {
-              "projectPath": "C:\\Users\\forma204\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj"
+            "C:\\Users\\Gregory\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj": {
+              "projectPath": "C:\\Users\\Gregory\\Documents\\GitHub\\OnlineGameClient\\OnlineGame\\OnlineGame\\OnlineGame.csproj"
             }
           }
         }
@@ -863,6 +937,10 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Microsoft.AspNet.SignalR.Client": {
+            "target": "Package",
+            "version": "[2.2.2, )"
+          },
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[2.5.0.122203, )"
